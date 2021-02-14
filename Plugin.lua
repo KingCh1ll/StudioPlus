@@ -7,6 +7,10 @@ end
 
 local LoadingStartTime = tick()
 
+--// Require Important Stuff //--
+local Load = require(6394976809)
+Load("Ui", script.Parent.Ui)
+
 --// Services //--
 local RunService = game:GetService("RunService")
 
