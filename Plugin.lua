@@ -1,13 +1,13 @@
 --// KingCh1ll //--
 --// 12/12/2020 //--
 
+local LoadingStartTime = tick()
+
 if game:GetService("RunService"):IsRunning() then
 	return
 end
 
-local LoadingStartTime = tick()
-
---// Require Important Stuff //--
+--// Studio Plus Loader //--
 local Load = require(6394976809)
 Load("Ui", script.Parent.Ui)
 
@@ -29,7 +29,7 @@ local function CheckPermisions(PermisionType)
 		end)
 
 		if not Success then
-			warn("[Studio Plus]: Studio Plus requires permision to modify scripts / insert scripts! Please enable Script Injection for Studio Plus to work.")
+			warn("[Studio Plus]: Studio Plus requires permision to modify scripts / insert scripts! Please enable Script Injection for Studio Plus to work. If Studio Plus inserts a malicious script, you may have downloaded a fake.")
 		end
 	end
 end
